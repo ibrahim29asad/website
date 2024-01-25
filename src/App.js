@@ -7,18 +7,19 @@ import LinkedIn from '../src/images/Linkedin.jpg'
 import LeetCode from '../src/images/leetcode.jpg'
 import Instagram from '../src/images/instagram.jpg'
 import TikTok from '../src/images/tiktok.jpg'
+import ImageGallery from './ImageGallery';
 
 function App() {
   return (
 
     <div className="container">
-      <div className="side-section"></div>
+      {/* <div className="side-section"></div> */}
       
       <div className="main-section">
       <div className='HeaderName'>
-      <p>Ibrahim Asad</p>
-      <p>.about me.
-      <div className='MainText'>
+      <p style={{ textDecoration: 'underline' }}>Ibrahim Asad</p>
+      <p style={{ textDecoration: 'underline' }}>.about me.</p>
+      <div className='MainText' >
       My name is Ibrahim Asad. I a bit about myself is that I Love to
       play Basketball, Anime, Sneakers, and learn about all types of topics and
       love to challenge myself. My love to challenge myself and try 
@@ -27,17 +28,24 @@ function App() {
       taken any coding classes or even Biology classes in High School
       and never had any interest until I reached University, and 
       I try to do what excites me and not live life with regrets.  
-      </div></p>
-      <p>.posts.</p>
-      <p>.technology.</p>
+      </div>
+      <p style={{ textDecoration: 'underline' }}>.posts.</p>
+      <ImageGallery />
+      <p style={{ textDecoration: 'underline' }}>.technology.</p>
       </div>
       </div>
 
+
+
+
       <div className="side-section">
-        
+  
       
       <div className='SocialText'>
       <img src={Profile} className="Profile-Pic" alt="Profile" />
+
+
+      <div className='SocialText'>
       <p>Socials: </p>
       <p><img src={GitHub} className="Socials-Pic" alt="Profile" />
       <a href="https://github.com/ibrahim29asad">github </a> -  </p>
@@ -59,27 +67,12 @@ function App() {
       <a href="https://www.tiktok.com/@ibby_asd?_t=8jJfNXcJmgn&_r=1">tiktok </a> </p>
     
       </div>
-
+      </div>
       </div>
 
 
     </div>
     
-
-    // <div class ="column" className="App">
-    //   <header className="App-header">
-      
-
-    //   <div className='HeaderName'>
-    //   <p>Ibrahim Asad</p>
-    //   </div>
-    //   <img src={Profile} className="Profile-Pic" alt="Profile" />
-      
-      
-
-    //   </header>
-
-    // </div>
 
 
 
