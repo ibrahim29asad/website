@@ -13,6 +13,22 @@
   }
 }
 
+main {
+  background: darkgrey;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background: black;
+}
+
+.no-margin {
+  margin: 0;
+}
+
 /*ad*/
 .container {
   display: flex;
@@ -26,14 +42,28 @@
   background-color: black;
   padding: 20px;
   box-sizing: border-box;
-  overflow-y: auto;
+  
+  /* overflow-y: auto; */
 }
+
+.side-section-left {
+  flex: 1; /* Each section takes up an equal amount of space */
+  /*border: 1px solid #ccc;  Optional: Add borders for visual separation */
+  background-color: black;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  
+  /* overflow-y: auto; */
+}
+
 .main-section {
   flex: 3; /* Each section takes up an equal amount of space */
   background-color: black;
   padding: 20px;
   box-sizing: border-box;
   overflow-y: auto;
+ 
 }
 
 .ScrollableContent {
@@ -48,12 +78,13 @@
   max-width: 100%; /* Ensure the image doesn't exceed its container */
   max-height: 100%; /* Ensure the image doesn't exceed its container */
   display: block; /* Remove any extra spacing below the image */
-  margin: 1 auto; /* Center the image horizontally */
-  border-radius: 50%;
+  margin: 0 auto; /* Center the image horizontally */
+  border-radius: 100%;
   width: 150px; /* Set the desired width */
   height: 150px; /* Set the desired height */
   object-fit: cover; /* Maintain aspect ratio and cover container */
   object-position: top left;
+
  
 }
 .Socials-Pic{
@@ -80,6 +111,26 @@
   color: white;
 }
 
+
+.Sidebar-HeaderName{
+  color: white;
+  background-color: black;
+  /* text-decoration: underline; */
+  font-family: Palatino, URW Palladio L, serif;
+  position: absolute;
+  max-width: 100%;
+  /* top: 8px;
+  left: 16px; */
+  font-size: 2.2vw;
+}
+.SideBar-MainText{
+  color: white;
+  background-color: black;
+  font-family: Palatino, URW Palladio L, serif;
+  font-size: 1.2vw;
+  max-width: 100%;
+  text-decoration: none; 
+}
 .HeaderName{
   color: white;
   background-color: black;
@@ -106,10 +157,12 @@
   color: white;
   background-color: black;
   font-family: Palatino, URW Palladio L, serif;
-  font-size: 1.2vw;
+  font-size: 2.2vw;
   max-width: 70%;
   text-decoration: none; 
 }
+
+
 
 
 a {
@@ -140,6 +193,8 @@ a:hover {
 }
 
 
+
+
 /*For Images*/
 /* ImageGallery.css */
 .image-gallery {
@@ -147,6 +202,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 70%;
+  background-color: black;
 }
 
 .gallery-item {
