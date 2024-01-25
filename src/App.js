@@ -26,7 +26,7 @@ function App() {
       Regression Models, Classification Models, SQL, and MySQL.
       </div>
       <div className="button">
-      <button onClick={() => window.location.href = 'https://drive.google.com/file/d/1OS5OGnpZ5POfOqTbdriz6TQCLOZtUbsn/view?usp=sharing'}>Resume</button>
+      <button onClick={() => window.location.href = 'https://drive.google.com/file/d/1PuZ5FNw6qthkoH94axtujPLrQlWBmJGJ/view?usp=sharing'}>Resume</button>
     </div>
     
       </div>
