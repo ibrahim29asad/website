@@ -23,6 +23,8 @@ main {
 
 body {
   background: black;
+  overflow-x: hidden;
+  
 }
 
 .no-margin {
@@ -42,29 +44,22 @@ body {
   background-color: black;
   padding: 20px;
   box-sizing: border-box;
-  
-  /* overflow-y: auto; */
-}
+  flex: auto;
 
-.side-section-left {
-  flex: 1; /* Each section takes up an equal amount of space */
-  /*border: 1px solid #ccc;  Optional: Add borders for visual separation */
-  background-color: black;
-  padding: 20px;
-  box-sizing: border-box;
-  position: fixed;
   
-  /* overflow-y: auto; */
 }
 
 .main-section {
   flex: 3; /* Each section takes up an equal amount of space */
   background-color: black;
   padding: 20px;
-  box-sizing: border-box;
   overflow-y: auto;
+  
  
 }
+
+
+
 
 .ScrollableContent {
   overflow-y: auto;
@@ -75,17 +70,16 @@ body {
 
 /* Pictures */
 .Profile-Pic{
+
   max-width: 100%; /* Ensure the image doesn't exceed its container */
   max-height: 100%; /* Ensure the image doesn't exceed its container */
   display: block; /* Remove any extra spacing below the image */
-  margin: 0 auto; /* Center the image horizontally */
-  border-radius: 100%;
+  margin: 1 auto; /* Center the image horizontally */
+  border-radius: 50%;
   width: 150px; /* Set the desired width */
   height: 150px; /* Set the desired height */
   object-fit: cover; /* Maintain aspect ratio and cover container */
-  object-position: top left;
-
- 
+  object-position: top left; 
 }
 .Socials-Pic{
   max-width: 100%; /* Ensure the image doesn't exceed its container */
@@ -93,8 +87,8 @@ body {
   display: block; /* Remove any extra spacing below the image */
   margin: 1 auto; /* Center the image horizontally */
   border-radius: 50%;
-  width: 75px; /* Set the desired width */
-  height: 75px; /* Set the desired height */
+  width: 50px; /* Set the desired width */
+  height: 50px; /* Set the desired height */
   object-fit: cover; /* Maintain aspect ratio and cover container */
   object-position: top left;
 }
@@ -128,8 +122,10 @@ body {
   background-color: black;
   font-family: Palatino, URW Palladio L, serif;
   font-size: 1.2vw;
-  max-width: 100%;
+  max-width: 25%;
   text-decoration: none; 
+  text-align: center;
+  
 }
 .HeaderName{
   color: white;
@@ -242,3 +238,49 @@ a:hover {
   text-align: center;
   margin: 0;
 }
+
+/*Buttons*/
+.vertical-buttons {
+  display: flex;
+  flex-direction: column;
+  transition-duration: 0.4s;
+  width: 200%;
+  
+}
+
+.vertical-buttons button {
+  margin-bottom: 16px;
+  color: white;
+  border-radius: 12px;
+  background-color: black;
+  height: 75px;
+  width: auto;
+  border-color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.vertical-buttons button:hover {
+  background-color: white;
+  color: black;
+}
+
+.button {
+  margin-top: 10px;
+}
+
+.button button {
+  padding: 30px 100px;
+ 
+  border-radius: 5px;
+  border-color: white;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.button button:hover {
+  background-color: white;
+  color: black;
+}
+

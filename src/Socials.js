@@ -15,16 +15,13 @@ const Socials = () => {
     <div className='SocialText'>
     <p>Socials: </p>
     <p><img src={GitHub} className="Socials-Pic" alt="Profile" />
-    <a href="https://github.com/ibrahim29asad">github </a> -  </p>
-    https://github.com/ibrahim29asad
-
+    <a href="https://github.com/ibrahim29asad">github </a> </p>
+   
     <p><img src={LinkedIn} className="Socials-Pic" alt="Profile" />
-    <a href="https://www.linkedin.com/in/iibrahimasad/">Linkedin </a> -  </p>
-    https://www.linkedin.com/in/iibrahimasad/
-
+    <a href="https://www.linkedin.com/in/iibrahimasad/">Linkedin </a> </p>
     <p><img src={LeetCode} className="Socials-Pic" alt="Profile" />
-    <a href="https://leetcode.com/user1833qc/">leetcode </a> -  </p>
-    https://leetcode.com/user1833qc/
+    <a href="https://leetcode.com/user1833qc/">leetcode </a> </p>
+   
 
     <p><img src={Instagram} className="Socials-Pic" alt="Profile" />
     <a href="https://www.instagram.com/ibrahim29asad/">instagram </a>  </p>
