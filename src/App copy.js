@@ -15,7 +15,7 @@ function App() {
   return (
 
     <div className="container"  >
-      <div className="sidenavleft">
+      <div className="side-section">
 
        <img src={Profile} className="Profile-Pic" alt="Profile" /> 
       <div className='Sidebar-HeaderName'>     
@@ -49,7 +49,7 @@ function App() {
       Engineering with a Minor in Biomedical Engineering. I have never
       taken any coding classes or even Biology classes in High School
       and never had any interest until I reached University, and 
-      I try to not live life with regrets. < br/>< br/>
+      I try to do what excites me and not live life with regrets. < br/>< br/>
       I am currently a student studying in Software Engineering. I have completed courses
       for Data Structures, Computer Organization and Architecture, and File and Database
        Management, Computer Networks, Software Architecture, Sensor Systems and Data 
@@ -63,7 +63,7 @@ function App() {
       , MySQL, SQL, Git, GitHub, C, C++, Java, JavaScript, React, Express.js, Flask, 
       and HTML5 are the tools and languages I use. I also have knowledge of Swift for 
       IOS development using Xcode as the IDE.  <br /> <br />
-      Currently Creating an Application that is able to read any researcher's biography
+      Currently Creating a Application that is able to read any researcher's biography
       from any source and constantly finds grants globally that relates to any
       professors line of research using Machine Learning. Project is a collaboration
       with 5 other group members in an eight-month deadline for the University of
@@ -103,12 +103,14 @@ function App() {
       </div>
 
 
-      <div className="sidenavright">
+
+
+      <div className="side-section">
   
       <div className='Sidebar-HeaderName'>     
             <div className="vertical-buttons">
-            <button onClick={() => scrollToSection('name')}>Top</button>
-            <button onClick={() => scrollToSection('me')}>About Me</button>
+            <button onClick={() => scrollToSection('ibrahim_asad')}>Top</button>
+            <button onClick={() => scrollToSection('about_me')}>About Me</button>
             <button onClick={() => scrollToSection('technology')}>Technology</button>
             <button onClick={() => scrollToSection('posts')}>Posts</button>
             

@@ -14,7 +14,7 @@
 }
 
 main {
-  background: darkgrey;
+  background: black;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -25,10 +25,6 @@ body {
   background: black;
   overflow-x: hidden;
   
-}
-
-.no-margin {
-  margin: 0;
 }
 
 /*ad*/
@@ -45,19 +41,48 @@ body {
   padding: 20px;
   box-sizing: border-box;
   flex: auto;
-
-  
+}
+.sidenavleft {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-top: 20px;
+}
+.sidenavright {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: black;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-top: 20px;
 }
 
 .main-section {
+  margin: 0;
+  padding: 0;
   flex: 3; /* Each section takes up an equal amount of space */
   background-color: black;
-  padding: 20px;
+  padding-left: 20%;
+  padding-top: 5%;
   overflow-y: auto;
   
  
 }
 
+
+.no-margin {
+  margin: 0;
+}
 
 
 
@@ -76,6 +101,7 @@ body {
   display: block; /* Remove any extra spacing below the image */
   margin: 1 auto; /* Center the image horizontally */
   border-radius: 50%;
+  background-color: black;
   width: 150px; /* Set the desired width */
   height: 150px; /* Set the desired height */
   object-fit: cover; /* Maintain aspect ratio and cover container */
@@ -122,7 +148,7 @@ body {
   background-color: black;
   font-family: Palatino, URW Palladio L, serif;
   font-size: 1.2vw;
-  max-width: 25%;
+  max-width: 100%;
   text-decoration: none; 
   text-align: center;
   
@@ -269,8 +295,8 @@ a:hover {
 }
 
 .button button {
-  padding: 30px 100px;
- 
+  padding: 30px 50px;
+  width: auto;
   border-radius: 5px;
   border-color: white;
   transition: background-color 0.3s, color 0.3s;
