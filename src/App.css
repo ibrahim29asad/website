@@ -67,7 +67,7 @@ body {
   position: relative;
   overflow: hidden;
   min-width: 300px; /* Set the minimum width */
-  min-height: 450px; /* Set the minimum height */
+  min-height: 500px; /* Set the minimum height */
   max-width: 95%;
   max-height: 95%;
 
@@ -97,6 +97,9 @@ body {
   max-width: 95%;
   text-decoration: none;
 }
+
+
+
 
 
 .Sidebar-HeaderName{
@@ -133,15 +136,12 @@ body {
 
 /*Social Text*/
 .SocialText{
-  color: white;
-  background-color: black;
+  color: black;
   font-family: Palatino, URW Palladio L, serif;
   position: absolute;
-  font-size: 1.2vw;
+  font-size: 1.6vw;
   
 }
-
-/*Main Text*/
 
 
 
@@ -264,7 +264,7 @@ a:hover {
   border: none;
   color: black;
   background-color: lavenderblush;
-  font-size: larger;
+  font-size: 2.9vw;
   font-family: Palatino, URW Palladio L, serif;
   cursor: pointer;
   
@@ -282,6 +282,37 @@ a:hover {
 }
 
 .square {
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  border-radius: 5%;
+  transition: background-color 0.5s ease;
+  background-color: lightsalmon;
+  color: black;
+  font-family: Palatino, URW Palladio L, serif;
+  font-size: 1.5vw;
+  max-width: 95%;
+  min-height: 600px;
+  text-decoration: none;
+}
+
+.bottom-square {
+  flex: 1;
+  height: 100%;
+  border-radius: 5%;
+  position: relative;
+  padding-left: 2.3%;
+  width: 100%; /* Adjusted width for responsiveness */
+  margin: 10px 5px 10px 5px;
+  transition: background-color 0.5s ease;
+  background-color: lightsalmon;
+  position: relative;
+  overflow: hidden;
+  min-width: 300px; /* Set the minimum width */
+  min-height: 450px; /* Set the minimum height */
+  max-width: 95%;
+  max-height: 95%;
+
   display: flex;
   flex-direction: column;
   height: 95%;
@@ -349,6 +380,22 @@ a:hover {
   
 }
 
+.Socials-Pic {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  object-position: top left;
+  flex-direction: ;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
 .square:hover .Profile-Pic {
   transform: scale(1.2); /* Increase the scale factor as needed */
 }
@@ -364,5 +411,5 @@ a:hover {
   transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 
-
+ 
 

@@ -5,6 +5,9 @@ import Profile from '../src/images/profile.jpg';
 import ImageGallery from './ImageGallery';
 import Socials from './Socials';
 import NameCover from './NameCover';
+import GitHub from '../src/images/github.jpg'
+import LinkedIn from '../src/images/Linkedin.jpg'
+import LeetCode from '../src/images/leetcode.jpg'
 
 
 function App() {
@@ -23,10 +26,7 @@ function App() {
           <p style={{textAlign: 'center'  }}>About Me:</p>
         </div>
         <div className='MainText'>
-        My name is Ibrahim Asad. I a bit about myself is that I Love 
-        to play Basketball, Anime, Sneakers, and learn about all types
-       of topics and love to challenge myself. My love to challenge
-        myself which is why I chose to do my degree,
+        My love to challenge myself is why I chose to do my degree,
         <strong>Software Engineering with a Minor in Biomedical Engineering</strong>.
         During these courses I have done multiple projects with other 
         students to learn more about and create applications. I am 
@@ -51,9 +51,9 @@ function App() {
       </div>
 
       {/* Spot 4 */}
-      <div className="square">
+      <div className="bottom-square">
   <div className='App-header'>
-    <p style={{ textAlign: 'center' }}>Resume</p>
+    <p style={{ textAlign: 'center',  }}>Resume</p>
   </div>
   <div className='MainText'>
     <div className="button" style={{ display: 'flex', justifyContent: 'center' }}>
@@ -66,17 +66,35 @@ function App() {
 
 
       {/* Spot 5 */}
-      <div className="square">
-        <div className='App-header'>
-        <p style={{  textAlign: 'center' }}>Socials</p>
-        </div>
-        <div className='MainText'>
-          Content for Spot 5
-        </div>
-      </div>
+      <div className="bottom-square">
+  <div className='App-header'>
+    <p style={{ textAlign: 'center' }}>Socials</p>
+  </div>
+  <div className="social-icons">
+    <div className="TextUnder-Image">
+      <img src={GitHub} className="Socials-Pic" alt="Profile" />
+      <p className="SocialText"><a href="https://github.com/ibrahim29asad">GitHub </a> </p>
+    </div>
+    <div className="TextUnder-Image">
+      <img src={LinkedIn} className="Socials-Pic" alt="Profile" />
+      <p className="SocialText"><a href="https://www.linkedin.com/in/iibrahimasad/">Linkedin </a> </p>
+    </div>
+    <div className="TextUnder-Image">
+      <img src={LeetCode} className="Socials-Pic" alt="Profile" />
+      <p className="SocialText"><a href="https://leetcode.com/user1833qc/">LeetCode </a> </p>
+    </div>
+  </div>
+</div>
+
+{/* <a href="https://github.com/ibrahim29asad">github </a> </p>
+   
+   <p className="SocialText"><a href="https://www.linkedin.com/in/iibrahimasad/">Linkedin </a> </p>
+  <p className="SocialText"><a href="https://leetcode.com/user1833qc/">leetcode </a> </p> */}
+
+      
 
       {/* Spot 6 */}
-      <div className="square">
+      <div className="bottom-square">
 
         <div className='MainText'>
         </div>
