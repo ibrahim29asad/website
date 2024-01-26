@@ -27,6 +27,8 @@ body {
   
 }
 
+
+
 /*ad*/
 .container {
   display: flex;
@@ -62,6 +64,8 @@ body {
   margin: 10px 5px 10px 5px;
   transition: background-color 0.5s ease;
   background-color: lightsalmon;
+  position: relative;
+  overflow: hidden;
 }
 
 .square:hover,
@@ -242,17 +246,23 @@ a:hover {
 
 .button {
   margin-top: 10px;
+  border-radius: 20%;
+  
 }
 
 .button button {
-  padding: 30px 50px;
-  width: auto;
-  border-radius: 5px;
-  border-color: white;
+  padding: 50px 50px;
+  width: 80%;
+  height: 30%;
+  border-radius: 15px ;
   transition: background-color 0.3s, color 0.3s;
-  background-color: black;
-  color: white;
+  border: none;
+  color: black;
+  background-color: lavenderblush;
+  font-size: larger;
+  font-family: Palatino, URW Palladio L, serif;
   cursor: pointer;
+  
 }
 
 .button button:hover {
@@ -267,10 +277,10 @@ a:hover {
 }
 
 .square {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 95%;
   border-radius: 5%;
-  position: relative;
-  padding-left: 2.3%;
   transition: background-color 0.5s ease;
   background-color: lightsalmon;
   color: black;
@@ -291,11 +301,61 @@ a:hover {
   }
 }
 
+@media (min-width: 601px) and (max-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* Media query for enforcing 3 by 2 on larger screens */
-@media (min-width: 601px) {
+@media (min-width: 1201px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.Profile-Pic {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top left;
+  padding-left: 20%;
+
+}
+
+.Profile-Pic {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top left;
+  transition: transform 0.3s ease;
+  
+}
+
+.square:hover .Profile-Pic {
+  transform: scale(1.2); /* Increase the scale factor as needed */
+}
+
+.square.hovered .Profile-Pic {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 
 
