@@ -14,7 +14,7 @@
 }
 
 main {
-  background: black;
+  background: white;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@ main {
 }
 
 body {
-  background: black;
+  background: white;
   overflow-x: hidden;
   
 }
@@ -30,105 +30,63 @@ body {
 /*ad*/
 .container {
   display: flex;
-  height: 100vh; /* 100% of the viewport height */
-  background-color: black;
+  height: 100vh;
+  flex-wrap: wrap;
+  background-color: seashell;
 }
 
-.side-section {
-  flex: 1; /* Each section takes up an equal amount of space */
-  /*border: 1px solid #ccc;  Optional: Add borders for visual separation */
-  background-color: black;
-  padding: 20px;
-  box-sizing: border-box;
-  flex: auto;
-}
-.sidenavleft {
-  height: 100%;
-  width: 20%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: black;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  padding-top: 20px;
-}
-.sidenavright {
-  height: 100%;
-  width: 20%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: black;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  padding-top: 20px;
+.large-square {
+  height: calc(98.5% - 10px);
+  border-radius: 5%;
+  position: relative;
+  padding-left: 2.3%;
+  width: 100%; /* Adjusted width for responsiveness */
+  margin: 10px 5px 10px 5px;
+  transition: background-color 0.5s ease;
+  background-color: lightsalmon;
+  color: black;
+  font-family: Palatino, URW Palladio L, serif;
+  font-size: 1.5vw;
+  max-width: 95%;
+  text-decoration: none;
+  flex: 2;
 }
 
-.main-section {
-  margin: 0;
-  padding: 0;
-  flex: 3; /* Each section takes up an equal amount of space */
-  background-color: black;
-  padding-left: 20%;
-  padding-top: 5%;
-  overflow-y: auto;
-  
- 
+.square {
+  flex: 1;
+  height: calc(50% - 10px);
+  border-radius: 5%;
+  position: relative;
+  padding-left: 2.3%;
+  width: 100%; /* Adjusted width for responsiveness */
+  margin: 10px 5px 10px 5px;
+  transition: background-color 0.5s ease;
+  background-color: lightsalmon;
 }
 
-
-.no-margin {
-  margin: 0;
+.square:hover,
+.large-square:hover {
+  background-color: pink;
 }
-
-
-
-.ScrollableContent {
-  overflow-y: auto;
-  max-height: 300px; /* Set a fixed height for the scrollable content */
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/* Pictures */
-.Profile-Pic{
-
-  max-width: 100%; /* Ensure the image doesn't exceed its container */
-  max-height: 100%; /* Ensure the image doesn't exceed its container */
-  display: block; /* Remove any extra spacing below the image */
-  margin: 1 auto; /* Center the image horizontally */
-  border-radius: 50%;
-  background-color: black;
-  width: 150px; /* Set the desired width */
-  height: 150px; /* Set the desired height */
-  object-fit: cover; /* Maintain aspect ratio and cover container */
-  object-position: top left; 
-}
-.Socials-Pic{
-  max-width: 100%; /* Ensure the image doesn't exceed its container */
-  max-height: 100%; /* Ensure the image doesn't exceed its container */
-  display: block; /* Remove any extra spacing below the image */
-  margin: 1 auto; /* Center the image horizontally */
-  border-radius: 50%;
-  width: 50px; /* Set the desired width */
-  height: 50px; /* Set the desired height */
-  object-fit: cover; /* Maintain aspect ratio and cover container */
-  object-position: top left;
-}
-
 
 .App-header {
-  background-color: black;
-  min-height: 100vh;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+  padding-left: 0%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 3.6vw;
+  color: Black;
+  font-weight: bolder;
+}
+
+.MainText {
+  color: black;
+  font-family: Palatino, URW Palladio L, serif;
+  font-size: 1.6vw;
+  max-width: 95%;
+  text-decoration: none;
 }
 
 
@@ -175,14 +133,6 @@ body {
 }
 
 /*Main Text*/
-.MainText{
-  color: white;
-  background-color: black;
-  font-family: Palatino, URW Palladio L, serif;
-  font-size: 1.2vw;
-  max-width: 70%;
-  text-decoration: none; 
-}
 
 
 
@@ -309,4 +259,44 @@ a:hover {
   background-color: white;
   color: black;
 }
+
+.container {
+  display: grid;
+  gap: 10px;
+  background-color: seashell;
+}
+
+.square {
+  height: 100%;
+  border-radius: 5%;
+  position: relative;
+  padding-left: 2.3%;
+  transition: background-color 0.5s ease;
+  background-color: lightsalmon;
+  color: black;
+  font-family: Palatino, URW Palladio L, serif;
+  font-size: 1.5vw;
+  max-width: 95%;
+  text-decoration: none;
+}
+
+.square:hover {
+  background-color: pink;
+}
+
+/* Media query for enforcing 3 by 2 on larger screens */
+@media (min-width: 601px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Media query for enforcing 6 by 1 on smaller screens */
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+
 
