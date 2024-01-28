@@ -11,8 +11,7 @@ The Repo For the Previous Two Versions is located here: \
 https://github.com/ibrahim29asad/website \
 or you can click this [link](https://github.com/ibrahim29asad/website) 
 
-This New Version can be seen here Without a Vercel Account: \
-[Current Version, V3](https://portfolio-ebon-xi-96.vercel.app) \
+This New Version can be seen here Without a Vercel Account: [Current Version, V3](https://portfolio-ebon-xi-96.vercel.app) \
 or With the Following Link, \
 https://portfolio-ebon-xi-96.vercel.app \
 The Repo For the Current Version is located here: \
