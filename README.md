@@ -1,9 +1,9 @@
 # Getting Started with Create React App
 
 
-This is Old Personal Portfolio, The First Version also be seen here by having a Vercel Account: \
+This is Old Personal Portfolio, The First Version also be seen here by having a Vercel Account:
 
-[Previous Version, V1](https://ibrahim-asad-website-9w7ulzjv6-ibrahim29asads-projects.vercel.app) \
+[Previous Version, V1](https://ibrahim-asad-website-9w7ulzjv6-ibrahim29asads-projects.vercel.app)
 
 The Second Iteration can be seen here without a Vercel Account, This Second Version was Updadated Design in Construction, However a Re-Haul was later Decided \
 [Previous Version, V2](https://ibrahim-asad-website.vercel.app) \
